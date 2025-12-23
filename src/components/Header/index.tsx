@@ -27,7 +27,7 @@ export const Header = () => {
     };
 
     window.addEventListener('resize', handleSize);
-    return () => removeEventListener('resize', handleSize);
+    return () => window.removeEventListener('resize', handleSize);
   }, []);
 
   return (
